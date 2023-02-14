@@ -1,9 +1,11 @@
 import json
 
 from django.conf import settings
-from wagtail.core import hooks
+from wagtail import hooks
 
-from ...utils import create_page_from_import, is_importing, set_importing, update_page_from_import
+from ...utils import (
+    create_page_from_import, is_importing, set_importing,
+    update_page_from_import)
 from .utils import GooglePicker, parse_document
 
 

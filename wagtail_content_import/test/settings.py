@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     "wagtail.contrib.routable_page",
     "wagtail.contrib.styleguide",
     "wagtail.sites",
-    "wagtail.core",
+    "wagtail",
     "taggit",
     "rest_framework",
     "django.contrib.admin",
@@ -158,3 +158,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "test-media")
 # Wagtail settings
 
 WAGTAIL_SITE_NAME = "Wagtail Content Import test site"
+
+# This is the base URL used by the Wagtail admin site.
+# It is typically used for generating URLs to include in notification emails.
+WAGTAILADMIN_BASE_URL = 'http://example.com'

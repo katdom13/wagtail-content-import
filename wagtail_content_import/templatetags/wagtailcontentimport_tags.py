@@ -1,6 +1,6 @@
 from django import template
 from django.utils.safestring import mark_safe
-from wagtail.core import hooks
+from wagtail import hooks
 
 register = template.Library()
 

@@ -1,7 +1,7 @@
 from django.urls import include, path
 from django.utils.html import format_html
+from wagtail import hooks
 from wagtail.admin.staticfiles import versioned_static
-from wagtail.core import hooks
 
 from . import admin_views
 
